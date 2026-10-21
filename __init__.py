@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
-#AScript 脚本：跟踪聚宽模拟策略，自动在同花顺手机端交易
+#项目名称：聚宽策略实盘安卓同花顺自动交易
+#作者: flyaga li
+#项目主页：https://github.com/flyaga/jq-strategy-android-ths-auto-trader
+
+#开发历史：
+#2026-10-21 v1.0 实现跟踪聚宽模拟策略，自动在同花顺安卓手机端交易
+
 from ascript.android.action import click, Touch, Key
 from ascript.android.node import Selector
 from ascript.android import action
