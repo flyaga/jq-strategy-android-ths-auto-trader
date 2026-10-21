@@ -24,16 +24,16 @@ import urllib3
 from datetime import datetime
 import re
 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# ======================== 配置区域 ========================
 isMn = True  # 是否模拟交易（类变量，可通过 self.isMn 访问）
 isTest = False
 
 # 手机屏幕PW，根据实际修改
 MOBILE_SCREEN_PW = "999999"
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-# ======================== 配置区域 ========================
 JOINQUANT_USER = "聚宽用户名，根据实际修改"          # 聚宽用户名，根据实际修改
 JOINQUANT_PWD = "聚宽密码，根据实际修改"           # 聚宽密码，根据实际修改
 STRATEGY_URLS = [                         # 策略URL列表，根据实际修改
